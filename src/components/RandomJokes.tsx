@@ -30,8 +30,8 @@ export default function RandomJokes(props : {data: Joke[]}) {
                 props.data.map((joke: Joke) =>
                     <SingleJokesDiv key={joke.id}>
                         <h3>Type of Joke: {joke.type}</h3>
-                        <p>{joke.setup}</p>
-                        <p>{joke.punchline}</p>
+                        <p><em>Setup</em>: {joke.setup}</p>
+                        <p><em>Punchline</em>: {joke.punchline}</p>
                         <p>ID: {joke.id}</p>
                     </SingleJokesDiv>
                 )
